@@ -1,0 +1,30 @@
+/* SECTION LAYOUT */
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-text, .section-image {
+  flex: 1;
+}
+
+.section-image img {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}

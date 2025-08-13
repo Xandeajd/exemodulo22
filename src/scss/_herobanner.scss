@@ -1,0 +1,76 @@
+/* Hero Banner */
+.folder {
+  text-shadow: 2px 1px #b7bcc1;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 75px;
+  color: #be0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  background-image: url(../img/public.png); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 20px;
+  }
+
+.folder h1 {
+  font-size: 70px;
+  background: linear-gradient(90deg, #ffcc00, #ff6600, #fffefa);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite, textGlow 2s ease-in-out infinite alternate;
+
+      
+      @media (max-width: 896px) {
+          font-size: 2.5rem;
+
+          img {
+            display: block;
+          }
+      }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0 0 10px rgba(255, 204, 0, 0.6); }
+  100% { text-shadow: 0 0 25px rgba(255, 102, 0, 0.9); }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c00;
+}

@@ -1,0 +1,26 @@
+@use 'sectionlayout';
+@use 'herosection';
+@use 'herobanner';
+@use 'countdown';
+
+/* Reset e estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+  line-height: 1.6;
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
