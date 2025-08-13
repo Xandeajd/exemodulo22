@@ -5,8 +5,13 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist" // Substitua "dist" pela pasta que seu Gulp gera
+        "distDir": "dist"
       }
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
 }
