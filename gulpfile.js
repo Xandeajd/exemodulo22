@@ -60,4 +60,4 @@ exports.scripts = scripts;
 // exports.images = images;
 exports.watch = watch;
 
-exports.default = gulp.parallel(styles, scripts, copyImages, html);
+exports.default = gulp.parallel(styles, scripts, copyImages, watch, html);
